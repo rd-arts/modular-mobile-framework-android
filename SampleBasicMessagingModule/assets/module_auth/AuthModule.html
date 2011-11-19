@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" charset="utf-8" src="../js/modular-app-0.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+		function signIn() {
+
+			// crappy WebView have delay for binding java object
+			setTimeout(function() {
+				AuthModule_native.authenticate(
+					document.getElementById("inputAuthToken").value, "document.inputAuthToken.value");
+				RCApplicationModuleDelegate.relinquishUIFocus();
+			}, 1000);
+
+		}
+
+		function onLoad() {
+		}
+
+		//document.addEventListener("DOMContentLoaded", onLoad, false);
+	</script>
+	<link href="../js/style-demo.css" rel="stylesheet"/>
+</head>
+<body onLoad="onLoad();">
+	<h1>Auth</h1>
+
+	<input id="inputAuthToken" type="text" value="sampletoken"/>
+	<input id="inputAuthNonce" type="text" value="samplenonce"/>
+	<button onclick="signIn();">Sign In</button>
+
+</body>
+</html>        

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+		>
+
+	<TextView android:id="@+id/text0"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:text="You can use this native button to control modules. For example you can jump to certain module or return to previous one."
+			/>
+
+	<Button android:id="@+id/b0"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/text0"
+			/>
+	<Button android:id="@+id/b1"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/text0"
+			android:layout_toRightOf="@id/b0"
+			/>
+
+	<com.rdarts.modularandroid.ModulesContainer
+			android:id="@+id/modular"
+			android:layout_width="match_parent"
+			android:layout_height="320dip"
+			android:layout_below="@id/b0"
+			/>
+
+	<Button android:id="@+id/b2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/modular"
+			/>
+	<Button android:id="@+id/b3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/modular"
+			android:layout_toRightOf="@id/b2"
+			android:visibility="gone"
+			/>
+</RelativeLayout>
+

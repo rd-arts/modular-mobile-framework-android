@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" charset="utf-8" src="../js/modular-app-0.0.0.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        function onLoad() {
+            RCApplicationModuleDelegate.showAlert("This is test message coming from JavaScript. It actually showed by native android Toast.");
+
+            setTimeout(function () {RCApplicationModuleDelegate.setModuleData("value", "varName");}, 500);
+        }
+
+        //document.addEventListener("DOMContentLoaded", onLoad, false);
+    </script>
+    <link href="../js/style-demo.css" rel="stylesheet"/>
+</head>
+<body onLoad="onLoad();">
+<h1>Test 2</h1>
+
+Test java script object <i>RCApplicationModuleDelegate</i> basic calls.
+<br/>
+Transferring data to component (variable). Doing RPC alert. You must see android native toast triggered from HTML5.
+
+</body>
+</html>        

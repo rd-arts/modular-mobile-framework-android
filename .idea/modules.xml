@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SampleBasicMessagingModule/SampleBasicMessagingModule.iml" filepath="$PROJECT_DIR$/SampleBasicMessagingModule/SampleBasicMessagingModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleHybridModule/SampleHybridModule.iml" filepath="$PROJECT_DIR$/SampleHybridModule/SampleHybridModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SampleNavigationModule/SampleNavigationModule.iml" filepath="$PROJECT_DIR$/SampleNavigationModule/SampleNavigationModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/modularoid.iml" filepath="$PROJECT_DIR$/modularoid.iml" />
+    </modules>
+  </component>
+</project>
+
